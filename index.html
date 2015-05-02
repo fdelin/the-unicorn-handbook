@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/unicorn.gif">
+  <title>the Unicorn Handbook</title>
+  <!--Web guy, web gal, unicorn supreme,-->
+  <!--you've found a wealth and a treasure of knowledge to apply,-->
+  <!--for your health and your pleasure, never running dry.-->
+  <!--Web guy, web gal, continue with your dream...-->
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/code-monokai.css">
+  <link rel="stylesheet" href="assets/css/jquery.mmenu.all.css">
+  <link rel="stylesheet" href="assets/css/jquery.mmenu.widescreen.css" media="all and (min-width: 1100px)">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<nav id="menu">
+  <div>
+    <ul>
+      <li>
+        <span><i class="fa fa-terminal"></i> &nbsp; Software setup</span>
+        <ul>
+          <li><a href="#setup-started">Getting started</a></li>
+          <li><a href="#setup-editors">Install a good code editor</a></li>
+          <li><a href="#setup-editorconfig">Configure your editor</a></li>
+          <li><a href="#setup-sass">Make it handle Sass</a></li>
+          <li><a href="#scss-linting">Write SCSS like a pro</a></li>
+        </ul>
+      </li>
+      <li>
+        <span><i class="fa fa-list-ul"></i> &nbsp; HTML markup</span>
+        <ul>
+          <li><a href="#html-syntax">Syntax</a></li>
+          <li><a href="#html-doctype">HTML5 doctype</a></li>
+          <li><a href="#html-lang">Language attribute</a></li>
+          <li><a href="#html-encoding">Character encoding</a></li>
+          <li><a href="#html-entities">Entity references</a></li>
+          <li><a href="#html-ie-compatibility-mode">Internet Explorer compatibility mode</a></li>
+          <li><a href="#html-style-script">CSS and JavaScript includes</a></li>
+          <li><a href="#html-practicality">Practicality over purity</a></li>
+          <li><a href="#html-attribute-order">Attribute order</a></li>
+          <li><a href="#html-boolean-attributes">Boolean attributes</a></li>
+          <li><a href="#html-reducing-markup">Reducing markup</a></li>
+          <li><a href="#html-javascript">JavaScript generated markup</a></li>
+        </ul>
+      </li>
+      <li>
+        <span><i class="fa fa-paint-brush"></i> &nbsp; CSS / Sass</span>
+        <ul>
+          <li><a href="#css-syntax">CSS syntax</a></li>
+          <li><a href="#css-declaration-order">Declaration order</a></li>
+          <li><a href="#css-import">Don't use @import</a></li>
+          <li><a href="#css-media-queries">Media query placement</a></li>
+          <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
+          <li><a href="#css-single-declarations">Rules with single declarations</a></li>
+          <li><a href="#css-shorthand">Shorthand notation</a></li>
+          <li><a href="#css-nesting">Use Sass wisely</a></li>
+          <li><a href="#css-comments">Comments</a></li>
+          <li><a href="#css-classes">Class names</a></li>
+          <li><a href="#css-selectors">Selectors</a></li>
+          <li><a href="#css-organization">Organisation</a></li>
+        </ul>
+      </li>
+      <li>
+        <span><i class="fa fa-magic"></i> &nbsp; JavaScript</span>
+        <ul>
+          <li><a href="#javascript-quality">JavaScript code quality</a></li>
+          <li><a href="#learning-javascript">Learning JavaScript</a></li>
+          <li><a href="#javascript-libraries">JavaScript libraries</a></li>
+          <li><a href="#task-running">JavaScript Task Runners</a></li>
+        </ul>
+      </li>
+      <li>
+        <span><i class="fa fa-code-fork"></i> &nbsp; Source Control</span>
+        <ul>
+          <li><a href="#sourcecontrol-overview">Overview</a></li>
+          <li><a href="#starting-with-git">Getting started with Git</a></li>
+          <li><a href="#learning-git">Learning how to use Git</a></li>
+        </ul>
+      </li>
+      <li><a href="#about"><i class="fa fa-book"></i> &nbsp; About the handbook</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <a class="menu-icon" href="#menu"><span></span></a>
+  <h1>The Unicorn<span> Handbook</span></h1>
+  <div class="clouds"></div>
+</header>
+
+<div class="mm-page">
+  <article>
+    <h2 class="intro">Your one-stop-shop for quality assuring best practices and web development advice.</h2>
+    <div class="heading" id="setup-started">
+      <h2>Getting started...</h2>
+      <p>Start by making a bed worth getting into. This means finding yourself a good editor with an automated workflow set up to make development a breeze. With the groundwork in place, the rest of your build will be much faster, much easier, and much more enjoyable.</p>
+    </div>
+
+    <section id="setup-editors">
+      <h3>Install a good code editor</h3>
+      <p>If you're still writing code using Notepad (or heavens forbid, Dreamweaver), you're missing out. <a href="http://www.sublimetext.com/" target="_blank">Sublime</a> is awesome and very fast even on slow computers. JetBrains on the other hand makes <a href="http://www.jetbrains.com/phpstorm/features/" target="_blank">PhpStorm</a>, a heavier but extremely competent editor, and my favourite by far. Microsoft released a new editor called <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> in April 2015, and it looks like with time it could become quite a solid software.</p>
+      <ul>
+        <li><a href="http://brackets.io/" target="_blank">Brackets</a></li>
+        <li><a href="http://www.sublimetext.com/" target="_blank">Sublime</a></li>
+        <li><a href="http://macromates.com/" target="_blank">Textmate</a></li>
+        <li><a href="http://www.jedit.org/" target="_blank">jEdit</a></li>
+        <li><a href="https://code.visualstudio.com/" target="_blank">VSCode</a></li>
+        <li><a href="http://www.jetbrains.com/products.html" target="_blank">Jetbrains</a> (big selection start with <a href="http://www.jetbrains.com/webstorm/features/" target="_blank">WebStorm</a>)</li>
+      </ul>
+      <img src="assets/images/setup-editors.jpg" alt="PhpStorm code editor by JetBrains">
+    </section>
+
+    <section id="setup-editorconfig">
+      <h3>Configure your editor</h3>
+      <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
+      <ul>
+        <li>Use soft-tabs set to two spaces</li>
+        <li>Trim trailing white space on save</li>
+        <li>Set encoding to UTF-8</li>
+        <li>Add new line at end of files. This is mainly to stop various <a href="http://markmail.org/message/bkzgatmsklvljqgw" target="_blank" title="Why have new lines at end of files?">issues with file concatenation</a> in many <a href="http://evanhahn.com/newline-necessary-at-the-end-of-javascript-files/" target="_blank" title="Newlines at the end of Javascript files">different languages</a>
+        </li>
+      </ul>
+
+      <p>A super easy way to ensure these things is to create an <code>.editorconfig</code> file with all the settings you wish to enforce. You then copy the file to the root of your projects and every editor with the <a href="http://editorconfig.org/#download" target="_blank">EditorConfig plugin</a> will read the file and automatically adjust its settings accordingly. <a href="http://editorconfig.org/" target="_blank">Learn more about EditorConfig</a> and you'll probably agree it's a great idea. Here is the <a href="editorconfig.txt" target="_blank" title="editorconfig file for download">.editorconfig</a> that I like to use. Rename the file to  ".editorconfig" once downloaded including the leading punctuation. Note that files starting with . may be hidden on your computer. Learn how to <a href="http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/" target="_blank">show hidden files on OS X.</a></p>
+    </section>
+
+    <section id="setup-sass">
+      <h3>Make it handle Sass</h3>
+      <p><a href="http://sass-lang.com/" target="_blank">Sass</a> lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other goodies that make writing CSS efficient and fun. Once you start tinkering with Sass, it will take your preprocessed Sass file and save it out as a normal CSS file that you can use in your web site. More on this later.</p>
+      <p>And yes, there is also a thing called <a href="http://lesscss.org/" target="_blank">Less</a>. If you're knowledgeable enough to have an opinion of which of these you prefer, then by all means go with what you know and prefer! For everyone else, Sass is what I prefer and highly recommend <a href="http://sass-lang.com/guide" target="_blank">for so many reasons</a>.</p>
+      <ul>
+        <li>Windows: Download and run the single-click <a href="http://www.rubyinstaller.org/">Ruby installer</a></li>
+        <li>Linux: Install Ruby through the apt package manager, <a href="https://github.com/sstephenson/rbenv/">rbenv</a>, or <a href="http://rvm.io/">RVM</a></li>
+        <li>Mac: Ruby comes pre-installed with OS X.</li>
+      </ul>
+    </section>
+
+    <section id="scss-linting">
+      <h3>Write SCSS like a pro</h3>
+      <p>scss-lint is a customizable tool with opinionated defaults that helps you enforce a consistent style in your SCSS. For these opinionated defaults, we've had to make calls about what we think are the "best" style conventions, even when there are often reasonable arguments for more than one possible style. Here is the <a href="https://github.com/brigade/scss-lint" target="_blank">scss-link github page</a> explaining more. Should you want to customize the checks run against your code, you can do so by editing your <a href="https://github.com/brigade/scss-lint#configuration" target="_blank">scss-lint configuration file</a> to match your preferred style. You can also download <a href="fdelin-scss-lint-config.yml" target="_blank">my scss-config file</a> to get a running start.</p>
+
+      <p>If you use Sublime for your code editing, there is a <a href="https://packagecontrol.io/packages/SublimeLinter-contrib-scss-lint" target="_blank">SCSS linting package for Sublime</a> available for the job. If you're into the JetBrains editors like me, you should have a look at this <a href="https://github.com/idok/scss-lint-plugin" target="_blank">SCSS lint plugin</a> instead.</p>
+    </section>
+  </article>
+  <article>
+    <h2 id="html">HTML</h2>
+    <section id="html-syntax">
+      <h3>HTML Syntax</h3>
+      <ul>
+        <li>Use soft tabs with two spaces as a way to guarantee that code renders the same in any environment</li>
+        <li>Nested elements should be indented once (two spaces)</li>
+        <li>Always use double quotes, never single quotes, on attributes (single quotes are used in CSS and JavaScript)</li>
+        <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag" target="_blank" title="Read the W3C spec on opening tags">HTML5 spec</a> says they're optional
+        </li>
+        <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
+      </ul>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;The title&lt;/h1&gt;
+    &lt;img src="images/portrait.jpg" alt="Photograph of author"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+     <section id="html-doctype">
+      <h3>HTML5 doctype</h3>
+      <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section id="html-lang">
+      <h3>Language attribute</h3>
+      <p>From the HTML5 spec:</p>
+      <blockquote>
+        <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
+      </blockquote>
+      <p>Read more about the <code>lang</code> attribute <a
+        href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element" target="_blank"
+        title="Read the W3C spec on the 'html' element">in the spec</a>.</p>
+      <p>Head to IANA for a list of the possible <a
+        href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry" target="_blank"
+        title="View the Internet Assigned Numbers Authority list of country sub-tags">language sub tags</a>.</p>
+      <p>Unless you are using several different versions of a language (eg. British and American), it is recommended to just use the language subtag on its own without a region subtag. To learn everything there is to know about the language tags, read the  IETF's "best current practice" in <a href="http://tools.ietf.org/html/bcp47" target="_blank">BCP 47 (RFC 5646 and RFC 4647)</a>. </p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;!-- … --&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section id="html-encoding">
+      <h3>Character encoding</h3>
+      <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding (generally UTF-8).</p>
+<pre><code class="html">&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+</code></pre>
+    </section>
+
+    <section id="html-entities">
+      <h3>Do not use entity references</h3>
+      <p>There is no need to use entity references like <code>—</code>, <code>&</code>, or <code>™</code>, assuming the same encoding (UTF-8) is used for files and editors as well as amongst the team.</p>
+<pre><code class="html">&lt;!-- Poor --&gt;
+  &lt;p&gt;The currency symbol for the Pound is &amp;ldquo;&amp;pound;&amp;rdquo;&lt;/p&gt;
+
+  &lt;!-- Good --&gt;
+  &lt;p&gt;The currency symbol for the Pound is "£"&lt;/p&gt;
+</code></pre>
+    </section>
+
+    <section id="html-ie-compatibility-mode">
+      <h3>IE compatibility mode</h3>
+      <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered with. Designating 'IE=edge' is the best practice because it ensures Internet Explorer uses the latest engine (including the latest security updates, feature support and overall faster execution).<strong>edge mode</strong>.</p>
+      <p>For more information, <a href="https://www.modern.ie/en-us/performance/how-to-use-x-ua-compatible" target="_blank" title="How to Use X-UA-Compatible">read the documentation at modern.IE</a>.
+      </p>
+<pre><code class="html">&lt;head&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;/head&gt;
+</code></pre>
+    </section>
+
+    <section id="html-style-script">
+      <h3>CSS and JavaScript includes</h3>
+      <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults, used if the attribute is absent.</p>
+      <h4>HTML5 spec links</h4>
+      <ul>
+        <li><a href="http://www.w3.org/TR/html5/document-metadata.html#the-link-element" target="_blank" title="Read spec on the 'link' element">Using link</a></li>
+        <li><a href="http://www.w3.org/TR/html5/document-metadata.html#the-style-element" target="_blank" title="Read spec on the 'style' element">Using style</a></li>
+        <li><a href="http://www.w3.org/TR/html5/document-metadata.html#the-script-element" target="_blank" title="Read spec on the 'script' element">Using script</a></li>
+      </ul>
+      <h4>File include locations</h4>
+      <p>CSS file includes should <strong>always</strong> be placed within the <code>&lt;head&gt;</code> tag of the document, beneath any <code>&lt;meta&gt;</code> tags.</p>
+      <p>JS file includes (<code>&lt;script&gt</code> tags) should be placed at the bottom of the file, just before the closing <code>&lt;/body&gt;</code> tag.</p>
+      <p>There are a few exceptions, such as <a href="http://modernizr.com" target="_blank" title="Modernizr browser feature detection">Modernizr</a>, which must be added to the <code>&lt;head&gt;</code> tag</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;!-- … --&gt;
+
+    &lt;!-- External CSS --&gt;
+    &lt;link rel="stylesheet" href="main.min.css"&gt;
+
+    &lt;!-- Include Modernizr in head --&gt;
+    &lt;script src="modernizr.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- … --&gt;
+
+    &lt;!-- any other JavaScript files at the very end --&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section id="html-practicality">
+      <h3>Practicality over purity</h3>
+      <p>Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.</p>
+    </section>
+
+    <section id="html-attribute-order">
+      <h3>Attribute order</h3>
+      <p>HTML attributes should come in this particular order for easier reading of code.</p>
+      <ul>
+        <li><code>class</code></li>
+        <li><code>id</code>, <code>name</code></li>
+        <li><code>data-*</code></li>
+        <li><code>src</code>, <code>for</code>, <code>type</code>, <code>href</code></li>
+        <li><code>title</code>, <code>alt</code></li>
+        <li><code>aria-*</code>, <code>role</code></li>
+      </ul>
+      <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
+<pre><code class="html">&lt;a class=" … " id=" … " data-modal="toggle" href="#"&gt;link title&lt;/a&gt;
+
+&lt;input class="form-control" type="text"&gt;
+
+&lt;img src="..." alt="..."&gt;
+</code></pre>
+    </section>
+
+    <section id="html-boolean-attributes">
+      <h3>Boolean attributes</h3>
+      <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
+      <p>For further reading, consult the <a
+        href="https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes"
+        target="_blank" title="Read the WhatWG section on boolean attributes">WhatWG section on boolean
+        attributes</a>:</p>
+      <blockquote>
+        <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+      </blockquote>
+      <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p>
+      <blockquote>
+        <p>If the attribute is present, its value must either be the empty string or [ … ] the attribute's canonical name, with no leading or trailing whitespace.</p>
+      </blockquote>
+      <p><strong>In short, don't add a value.</strong></p>
+<pre><code class="html">&lt;input type="text" disabled&gt;
+
+&lt;input type="checkbox" value="1" checked&gt;
+
+&lt;select&gt;
+  &lt;option value="1" selected&gt;1&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+    </section>
+
+    <section id="html-reducing-markup">
+      <h3>Reducing markup</h3>
+      <p>Avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:</p>
+<pre><code class="html">&lt;!-- Poor --&gt;
+&lt;span class="logotype"&gt;
+  &lt;img src=" … "&gt;
+&lt;/span&gt;
+
+&lt;!-- Good --&gt;
+&lt;img class="logotype" src=" … "&gt;
+</code></pre>
+
+    </section>
+
+    <section id="html-javascript">
+      <h3>JavaScript generated markup</h3>
+      <p>Writing markup in a JavaScript file makes the content harder to find and harder to edit. Avoid it whenever possible.</p>
+    </section>
+  </article>
+
+  <article>
+    <h2 id="css">CSS</h2>
+
+    <section id="css-syntax">
+      <h3>CSS and Sass Syntax</h3>
+      <ul>
+        <li>Use soft tabs with two spaces to guarantee that code renders the same in any environment.</li>
+        <li>When grouping selectors, keep individual selectors to a single line.</li>
+        <li>Include one space before the opening brace of declaration blocks for legibility.</li>
+        <li>Place closing braces of declaration blocks on a new line.</li>
+        <li>Include one space after <code>:</code> for each declaration.</li>
+        <li>Each declaration should appear on its own line for more accurate error reporting.</li>
+        <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
+        </li>
+        <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
+        <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).
+        </li>
+        <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).
+        </li>
+        <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
+        </li>
+        <li>Use shorthand hex values where available, e.g., <code>#f84</code> instead of <code>#ff8844</code>.</li>
+        <li>Quote attribute values in selectors, e.g., <code>input[type='text']</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css" target="_blank" title="Read article on input selectors in JS/CSS">They're only optional in some cases</a>, and it’s a good practice for consistency.
+        </li>
+        <li>Although <a href="http://dev.w3.org/csswg/css2/syndata.html#uri" target="_blank" title="Read about quotes on url values">they're optional</a>, always use quotes around <code>url()</code> values, to limit the risk of broken URLs (e.g., <code>background-image: url('image.png')</code>.
+        </li>
+        <li>Always use single ' ' quotes instead of double " " quotes (technically it does not matter, but keep it consistent. Besides, it's how Google and many other large companies prefer their code formatted).</li>
+        <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.
+        </li>
+      </ul>
+      <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax" target="_blank" title="Read the CSS syntax section on Wikipedia">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
+<pre><code class="css">/* Poor */
+.selector, .other-selector, .selector[type=text] {
+  padding: 0px;
+  margin:0px 0px 15px;
+  background-color:rgba(0, 255, 255, .5);
+  background-image:url(../img/sprite.png);
+  box-shadow:0px 1px 2px #88FF00,inset 0 1px 0 #EEEEEE
+}
+
+/* Good */
+.selector,
+.other-selector,
+.selector[type='text'] {
+  padding: 0;
+  margin-bottom: 15px;
+  background-color: rgba(0,255,255,0.5);
+  background-image: url('../img/sprite.png');
+  box-shadow: 0 1px 2px #8f0, inset 0 1px 0 #eee;
+}
+</code></pre>
+    </section>
+
+    <section id="css-declaration-order">
+      <h3>Declaration order</h3>
+      <p>Related property declarations should be grouped together following the order:</p>
+      <ol>
+        <li>Positioning</li>
+        <li>Box model</li>
+        <li>Typographic</li>
+        <li>Visual</li>
+      </ol>
+      <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p>
+      <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p>
+      <p>When writing SCSS, always start with your <code>@extend</code> declarations, followed by your properties and finally the rule sets. I'm actually slowly changing my mind about the order and sometimes find myself preferring to simply sort my declarations alphabetically.</p>
+<pre><code class="css">.declaration-order {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  /* Box-model */
+  display: block;
+  float: right;
+  width: 100px;
+  height: 100px;
+
+  /* Typography */
+  font: normal 13px 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+
+  /* Visual */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
+  /* Misc */
+  opacity: 1;
+}
+</code></pre>
+    </section>
+
+    <section id="css-import">
+      <h3>Don't use @import</h3>
+      <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
+      <ul>
+        <li>Use multiple <code>&lt;link&gt;</code> elements</li>
+        <li>Or even better! Compile your CSS with a SASS preprocessor into a single minified file</li>
+      </ul>
+      <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/" target="_blank"
+                                  title="Read article about @import statements">read this article by Steve Souders</a>.
+      </p>
+<pre><code class="html">&lt;!-- Avoid @imports --&gt;
+&lt;style&gt;
+  @import url('more.css');
+&lt;/style&gt;
+
+&lt;!-- Use link elements --&gt;
+&lt;link rel="stylesheet" href="core.css"&gt;
+</code></pre>
+    </section>
+
+    <section id="css-media-queries">
+      <h3>Media query placement</h3>
+      <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate style sheet or at the end of the document. Doing so makes it easier to miss them in the future.</p>
+      <p>By grouping your style in this way, adding a few extra breakpoints won't take any time at all, but it might make all the difference to the appearance of the page. There is a slight performance overhead for each media query added so don't go crazy, but add enough of them for the styled item to fit naturally in the allocated space regardless of window width.</p>
+<pre><code class="sass">/* CSS version */
+.element { … }
+
+@media (min-width: 480px) {
+  .element { … }
+}
+
+
+/* Sass version */
+.element {
+  …
+  @media (min-width: 480px) { … }
+}
+</code></pre>
+    </section>
+
+    <section id="css-prefixed-properties">
+      <h3>Prefixed properties</h3>
+      <p>When using vendor prefixed properties, indent each property such that the declaration's value lines up vertically for easy multi-line editing.</p>
+      <ul>
+        <li>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A).</li>
+        <li>In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr; Add Next Line</strong> (&#8963;&#8679;↓).</li>
+      </ul>
+<pre><code class="css">/* Prefixed properties */
+.selector {
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+</code></pre>
+    </section>
+
+    <section id="css-single-declarations">
+      <h3>Single declarations</h3>
+      <p>In instances where a rule set includes <strong>only one declaration</strong>, you may remove line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
+      <p>However, consider your CSS validator reporting that you have a syntax error on Line 97. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+<pre><code class="css">/* Single declarations optional on one line */
+.class1 { width: 60px; }
+.class2 { width: 140px; }
+.class3 { width: 220px; }
+
+/* Multiple declarations, one per line */
+.sprite {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url('../img/sprite.png');
+}
+</code></pre>
+    </section>
+
+    <section id="css-shorthand">
+      <h3>Shorthand notation</h3>
+      <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:</p>
+      <ul>
+        <li><code>padding</code></li>
+        <li><code>margin</code></li>
+        <li><code>font</code></li>
+        <li><code>background</code></li>
+        <li><code>border</code></li>
+        <li><code>border-radius</code></li>
+      </ul>
+      <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p>
+      <p>The Mozilla Developer Network has a great article on <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank" title="Read article on shorthand properties">shorthand properties</a> for those unfamiliar with notation and behaviour.</p>
+<pre><code class="css">/* Poor */
+.element {
+  margin: 0 0 10px;
+  background: red;
+  background: url('image.jpg');
+  border-radius: 3px 3px 0 0;
+}
+
+/* Good */
+.element {
+  margin-bottom: 10px;
+  background-color: red;
+  background-image: url('image.jpg');
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+</code></pre>
+    </section>
+
+    <section id="css-nesting">
+      <h3>Use Sass wisely</h3>
+      <p>Avoid creating complex selectors. With Sass, unnecessary nesting is one of the easiest ways to over qualify your selectors. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested. There is a level of convenience involved of course, but please keep the end result in mind.</p>
+      <p>Guil Hernandez at Treehouse wrote an article on <a href="http://blog.teamtreehouse.com/common-css-front-end-code-mistakes" target="_blank" title="How to Evaluate Front-End Code for Inefficiencies">How to Evaluate Front-End Code for Inefficiencies</a> that deserves both one and two reads.</p>
+    </section>
+
+    <section id="css-comments">
+      <h3>Comments</h3>
+      <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.</p>
+      <p>Be sure to write in complete sentences for larger comments and succinct phrases for general notes.</p>
+      <p>Wrap long comments to make them easier to read:</p>
+<pre><code class="css">/* Poor */
+/* Modal header */
+.modal-header {
+  attribute: value;
+}
+
+/* Good */
+/*
+* Wrapping element for
+* .modal-title and .modal-close
+*/
+.modal-header {
+  attribute: value;
+}
+</code></pre>
+      <p>There is a discussion going on about how to technically comment your CSS. You see, CSS uses the same "block comment" syntax as the C-like languages - you start a comment with /*, and end it with */. But you can also add // in front of a line to comment it out. Now this is not a "true" comment as CSS is missing the "line comment" syntax that many other languages have. What actually happens is that you put an invalid value in your style sheet, thus nullifying whatever comes after. Keep this in mind if minifying your CSS as you might accidentally "comment out" a huge chunk of your CSS when everything gets saved on one line. Personally I really like line commenting and use // frequently. Sometimes I mix it up and use /* ... */ for larger blocks of text, but as a general rule, I try not to. In my case I use Sass and when I built it into CSS it automatically removes the comments and minifies the output as well. You can <a href="https://web-design-weekly.com/2014/06/15/different-sass-output-styles/" target="_blank">learn more about how to output compressed CSS here</a>.</p>
+    </section>
+
+    <section id="css-classes">
+      <h3>Class names</h3>
+
+      <ul>
+        <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).
+        </li>
+        <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.
+        </li>
+        <li>Keep classes as short and succinct as possible.</li>
+        <li>Use meaningful names; use structural or purposeful names over presentational.</li>
+        <li>Prefix classes based on the closest parent or base class.</li>
+        <li>Use <code>.js-*</code> classes to denote behaviour (as opposed to style), but keep these classes out of your CSS.
+        </li>
+      </ul>
+
+      <p>It's also useful to apply many of these same rules when creating Sass variable names.</p>
+<pre><code class="css">/* Bad example */
+.a { … }
+.background { … }
+.red { … }
+
+/* Good example */
+.avatar { … }
+.avatar-background{ … }
+.important { … }
+</code></pre>
+    </section>
+
+    <section id="css-selectors">
+      <h3>Selectors</h3>
+
+      <ul>
+        <li>Use classes over generic element tag for optimum rendering performance.</li>
+        <li>Avoid using several attribute selectors (e.g., <code>[class^=" … "]</code>) on commonly occurring components. Browser performance is known to be impacted by these.
+        </li>
+        <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li>
+        <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).
+        </li>
+      </ul>
+
+
+      <p>Additional reading by Mark Otter:</p>
+
+      <ul>
+
+        <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/" target="_blank" title="Read about scoping classes">Scope CSS classes with prefixes</a></li>
+        <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/" target="_blank" title="Read about issues with cascading (too much)">Stop the cascade</a></li>
+      </ul>
+<pre><code class="css">/* Bad example */
+  .a { … }
+  .background { … }
+  .red { … }
+
+  /* Good example */
+  .avatar { … }
+  .avatar-background{ … }
+  .important { … }
+</code></pre>
+    </section>
+
+    <section id="css-organization">
+      <h3>Organisation</h3>
+      <ul>
+        <li>Organise sections of code by component.</li>
+        <li>Develop a consistent commenting hierarchy.</li>
+        <li>Use consistent white space to your advantage when separating sections of code for scanning larger documents.
+        </li>
+        <li>
+          When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.<br>
+          This is also relevant for Sass, when using embedded files.
+        </li>
+      </ul>
+    </section>
+
+  </article>
+  <article>
+    <h2 id="javascript">JavaScript</h2>
+    <section id="javascript-quality">
+      <h3>JavaScript code quality</h3>
+      <p>As with CSS and Sass, a good linting program is an invaluable time saver and quality assuring tool you simply must explore if you've not already. Any code base eventually becomes huge at some point, and simple mistakes (that would not show themselves when written) can waste hours of debugging. And this is when static code analysis tools come into play and help developers spot such problems. JavaScript linters scans your JavaScript and reports mistakes and potential bugs. The potential problem could be a syntax error, a bug due to implicit type conversion, a leaking variable or something else. <a href="http://www.jslint.com/lint.html" target="_blank">JSLint</a> is the grandfather of JavaScript linting. Later JSHint rose to the challenge as a community driven project and is probably the better choice nowadays. Have a look at the <a href="http://jshint.com/install/" target="_blank">JSHint installation page</a> to see if you can find something for your own particular setup (I'm sure you can).</p>
+      <p>It seems that almost every large company have their own code style guide and they pretty much all say the same things. Here are a few to look at: <a href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml" target="_blank">Google JavaScript Style Guide</a>, <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style#JavaScript_practices" target="_blank">Mozilla Developer JavaScript Practices</a>, <a href="https://contribute.jquery.org/style-guide/js/" target="_blank">jQuery JavaScript Style Guide</a>, <a href="http://www.w3schools.com/js/js_conventions.asp" target="_blank">W3schools JavaScript Style Guide and Coding Conventions</a> and the <a href="https://github.com/airbnb/javascript" target="_blank">Airbnb JavaScript Style Guide</a> is also a great resource.</p>
+      <p>One man that really knows what he is talking about when it comes to JavaScript coding is Rick Waldron. He and his buddies put together the essential reading <a href="https://github.com/rwaldron/idiomatic.js" target="_blank">Principles of Writing Consistent, Idiomatic JavaScript</a>. Although not intended as something you should follow religiously, if you do it will infinitely improve the appearance of your code. I'm dead serious.</p>
+    </section>
+    <section id="learning-javascript">
+      <h3>Learning JavaScript</h3>
+      <p>If you're new to JavaScript, a good starting place to learn is the very introductory <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">MDN JavaScript Basics</a>. Also look at the <a href="http://jsforcats.com/" target="_blank">JavaScript for cats</a> introduction for new programmers. Once you've familiarised yourself a bit, consider the more in-depth look at JavaScript as a language and excellent reference source the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript Guide</a>, also on MDN. If you're serious about your learning I'd consider completing <a href="http://www.codecademy.com/en/tracks/javascript" target="_blank">the fundamentals of JavaScript</a> over at <a href="http://www.codecademy.com/" target="_blank">Codeacademy.com</a> to get a running start.</p>
+      <p>One resource that must be mentioned is <a href="http://superherojs.com/" target="_blank">Superhero.js</a>. A goldmine of articles, videos and presentations, curated into a continuously updated list that help explain the syntax of JavaScript, how to organize your projects, how to test your code, and what's on the horizon. For the more advanced users you have the whole <a href="http://chimera.labs.oreilly.com/books/1234000000262/ix01.html" target="_blank">Programming JavaScript Applications</a> book by Eric Elliott free online.</p>
+    </section>
+    <section id="javascript-libraries">
+      <h3>JavaScript libraries</h3>
+      <p>In this day and age we have a fantastic selection of JavaScript libraries at our fingertips, there to improve literally every aspect of modern web development. For general DOM manipulation, event handling, animation and much more, <a href="http://jquery.com/" target="_blank">jQuery</a> is the undisputed king. Talking about kings, <a href="http://modernizr.com/" target="_blank">Modernizr</a> is probably one of the other most used libraries out there, providing finer control over your solution through feature detection and reporting. It's perfect for doing progressive enhancement easily. <a href="http://iscrolljs.com/" target="_blank">iScroll</a> is a high performance, small footprint, dependency free, multi-platform scrolling library which is very popular although a <a href="https://github.com/cubiq/iscroll/issues/865" target="_blank">complete overhaul</a> is in the works. I'm a new user of <a href="http://julian.com/research/velocity/" target="_blank">Velocity</a> as an animation tool instead of using jQuery or <a href="http://greensock.com/gsap" target="_blank">GreenSock</a> and really like it so far. Having come from a Flash background I also enjoy dabbing with <a href="http://createjs.com/" target="_blank">CreateJS</a> now and again.</p> <p>There is a JavaScript library for every occasion and it's easy to get overwhelmed trying to stay on top of everything new. I'll use this rant from one developer on the subject to add a few more links: <em>"I just finished learning <a href="http://backbonejs.org/" target="_blank">Backbone</a> and now I've found out on HN that it's old news, and I should use <a href="http://emberjs.com/" target="_blank">Ember</a>, cross that, it has opinions, I should use <a href="https://www.meteor.com/" target="_blank">Meteor</a>, no, <a href="https://angularjs.org/" target="_blank">Angular</a>, no, <a href="http://tower.github.io/" target="_blank">Tower</a> (on <a href="https://nodejs.org/" target="_blank">node.js</a>), and for html templates I need <a href="http://handlebarsjs.com/" target="_blank">Handlebars</a>, no <a href="https://github.com/janl/mustache.js" target="_blank">Mustache</a>, wait, <a href="http://olado.github.io/doT/index.html" target="_blank">DoT</a> is better, hang on, why do I need an HTML parser inside the browser? Isn't that what the browser for? So no HTML templates? Ok, DOM snippets, fine, <a href="http://webcomponents.org/" target="_blank">Web Components</a> you say? W3C are in the game too? You mean write REGULAR JavaScript like the Google guys? Yuck! Oh, I should write it in <a href="http://coffeescript.org/" target="_blank">CofeeScript</a>, not Coffee? <a href="https://github.com/satyr/coco" target="_blank">Coco</a>? <a href="http://livescript.net/" target="_blank">LiveScript</a>? <a href="https://www.dartlang.org/" target="_blank">DART</a>? <a href="http://www.gwtproject.org/" target="_blank">GWT</a>? ... ..."</em> He didn't even mention <a href="http://knockoutjs.com/" target="_blank">Knockout</a>.</p>
+    </section>
+    <section id="task-running">
+      <h3>JavaScript Task Runners</h3>
+      <p>Personally, I absolutely love how far you can get with a decent editor and a few plugins. Very seldom do the projects I run include additional task runners such as Gulp or Grunt for automation. That said, if you're a web developer you should at least know about these things. <a href="http://gruntjs.com/">Grunt</a> is probably the most popular task runner, with <a href="http://gulpjs.com/">Gulp</a> not far behind. Preslav Rachev wrote a <a href="https://medium.com/@preslavrachev/gulp-vs-grunt-why-one-why-the-other-f5d3b398edc4">great article comparing the two</a> to help you decide. Then of course you have people such as Keith Cirkel suggesting we scale back a bit as in this article suggesting we <a href="http://blog.keithcirkel.co.uk/why-we-should-stop-using-grunt/">stop using Grunt completely</a> and simply rely on the good old <a href="https://www.npmjs.com/">npm package manager</a>. He also wrote a superb article on <a href="http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/">how to use npm as a build tool</a>.</p>
+    </section>
+  </article>
+
+  <article>
+    <h2 id="sourcecontrol">Distributed Version Control Systems</h2>
+    <section id="sourcecontrol-overview">
+      <h3>Overview</h3>
+      <p>Wikipedia knows it all: "Revision control, also known as version control and source control (and an aspect of software configuration management), is the management of changes to documents, computer programs, large web sites, and other collections of information." But I beg to differ on one point, source control is not only for large websites, it's for any type of site no matter how small. Even if only two guys work on the same code, or even just yourself, source control is your friend. I won't go into what you might be doing wrong right now such as keeping all your recent code directly on the ftp. People make changes to the same files, but how do you know if a file got changed while you were doing your own edits? When you upload, how do you know if you're overwriting updates made by others? You'd have to be pretty new in the game to work like this, but I've seen it happen more often than I'd like to admit. You say "but we keep backups and save copies of the different versions whenever we change something big". Slow clap on that. Just the thought makes my skin crawl! If you're not into proper source control, now is the time to start. It will keep your code safe. You'll be able to see what files have been changed and by whom and even when. You'll be able to have several people work on the same files and then as if by magic have the individual updates combine into one. You'll be able to see the change history of files including every single time it was updated, and every single line of code that got changed. You'll even be able to step back in time for some files but not others should you wish to go back to a previous version. If you're working on a larger site, there are endless other benefits such as linking updates to logged issues, time tracking, branch management, etc. Distributed source control is of course superior compared to solutions such as Subversion in that you don't have to be connected to be able to work with it, but taking <a href="http://git-scm.com/" target="_blank">Git</a> as an example there are in my mind so many other things making it the superior choice. I'm not the only one that feels this way and Git is <a href="http://www.netinstructions.com/the-case-for-git/" target="_blank">rapidly becoming the de facto standard</a> when it comes to general source control.</p>
+    </section>
+    <section id="starting-with-git">
+      <h3>Getting started with Git</h3>
+      <p>I admit that taking your first steps in this direction can be pretty daunting for a beginner. Please don't let that discourage you. You'll thank me later and honestly it's not as difficult as it may seem at first glance. First of all you need to sign up to a service such as <a href="https://github.com/" target="_blank">GitHub</a> or <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>. When it comes to using these services, you'd probably not want to do the terminal kind of way as a beginner. If you do, check out <a href="http://rogerdudler.github.io/git-guide/" target="_blank">The simple guide</a> by Roger Dudler. It's to the point and as he writes "No deep shit". c0deporn released a really good video called <a href="https://www.youtube.com/watch?v=Y9XZQO1n_7c" target="_blank">Learn Git in 20 minutes</a> which also shows you how to use Git from the terminal. You could of course make your life a bit easier by downloading a software such as <a href="http://www.sourcetreeapp.com/" target="_blank">SourceTree</a> or <a href="http://www.git-tower.com/" target="_blank">Tower</a> or even the GitHub apps for <a href="https://mac.github.com/" target="_blank">OS X</a> and <a href="https://windows.github.com/" target="_blank">Windows</a>. You can set all of them up to work with both GitHub and Bitbucket. I really like SourceTree myself. There is a million and one tutorials out there, but this video called <a href="" target="_blank">GitHub - a Step by Step For Beginners using SourceTree GUI</a> is pretty good.
+    </section>
+    <section id="learning-git">
+      <h3>Learning how to use Git</h3>
+      <p>What can I say... Find a friend already using Git, and ask to sit with them for a few hours to see how it's done. That's how I picked it up! If this is not an option, there is a very good Git Beginner's Guide for Dummies series by Backlogtool.com with a <a href="http://backlogtool.com/git-guide/en/intro/intro1_1.html" target="_blank">Getting started</a> module for beginners and a <a href="http://backlogtool.com/git-guide/en/stepup/stepup1_1.html" target="_blank">Working with Git</a> section for intermediate users. They also have a very comprehensive <a href="http://backlogtool.com/git-guide/en/reference/" target="_blank">topic specific help section</a>. One resource I really like the look of is the /learn/ step-by-step course for the complete beginner by Tower (the software I mentioned earlier). It's free, very polished, and includes a fantastic <a href="http://www.git-tower.com/learn/ebook/command-line/introduction" target="_blank">eBook</a>, several <a href="http://www.git-tower.com/learn/videos#episodes" target="_blank">video courses</a> and a one hour recorded <a href="https://www.youtube.com/watch?v=Fwdg8-thBAc" target="_blank">webinar</a>. Other than that, Google is your friend.
+    </section>
+  </article>
+
+  <article>
+    <h2 id="about">About the handbook</h2>
+    <section id="about-handbook">
+      <img src="assets/images/HTML5_sticker.svg" alt="HTML5 sticker">
+      <h3>The purpose of this guide</h3>
+      <p>A lot of the stuff in that made it into this version of the Unicorn Handbook could be described as best practices and plain old good advice. It's the accumulation of knowled gathered over the years, from a freelancer to a team manager, whilst working on quick two day projects as well as year long undertakings. You could call it a tally of the countless things I've initially done wrong, but later learned to do better =) Take it for what it is, just a few suggestions and a nudge in the right direction!</p>
+      <h3>Acknowledgements</h3>
+      <p>I was inspired to create the Unicorn Handbook after reading the fantastic but modestly named <a href="https://github.com/mdo/code-guide" target="_blank">Code Guide</a> by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>. I strongly recommend that you read it. Much of the HMTL/CSS advice I wholehartedly agree with and copied straight across. More of what is covered in this guide is based on the countless blog posts, guides, tweets, rants, etc. made by people infinitely more familiar with the intricate details of these technologies. I can't even start to make a list of my daily and ongoing inspiration, yet alone the sources I've used as the foundation for this handbook. It's a magical world out there. <a href="https://www.google.com" target="_blank">Go explore</a>.</p>
+    </section>
+    <section>
+      <hr>
+      <p class="copyright">The Unicorn Handbook by Fredrik Delin</span> is <a rel="license" href="LICENSE.txt" target="_blank">licensed under MIT</a> as open source. Feel free to reuse as you please. <a href="https://twitter.com/home?status=Impressed%20by%20the%20Unicorn%20Handbook%20-%20Quality%20web%20development%20advice%20from%20@fdelin%20for%20unicorn%20designers%20and%20unicorns%20to%20be!%20https://" target="_blank">Share with a tweet if you like it!</a></p>
+      <p>Created by <a href="//twitter.com/fdelin/">@fdelin</a></p>
+    </section>
+  </article>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="assets/js/jquery.mmenu.min.all.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
